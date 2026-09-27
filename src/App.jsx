@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { supabase } from './supabaseClient'
 import Auth from './components/Auth'
+import Dashboard from './components/Dashboard'
 import './App.css'
 
 export default function App() {
@@ -42,7 +43,7 @@ export default function App() {
       </header>
 
       <main>
-        <p className="muted">You're logged in. Your habits will appear here.</p>
+        <Dashboard />
       </main>
     </div>
   )

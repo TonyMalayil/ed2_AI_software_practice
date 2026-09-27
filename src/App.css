@@ -48,3 +48,58 @@
 .topbar h1 { margin: 0; }
 
 .user { display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem; }
+
+/* ---------- Dashboard ---------- */
+main { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.section-title { margin-bottom: 0.75rem; }
+
+.banner {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--danger);
+  border-radius: 8px;
+}
+
+.empty { text-align: center; padding: 2rem 0; }
+
+/* ---------- Habit form ---------- */
+.habit-form { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.75rem; }
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.colors { display: flex; gap: 0.5rem; }
+
+.swatch {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+.swatch.selected { outline: 2px solid var(--text); outline-offset: 2px; }
+
+.actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+/* ---------- Habit list ---------- */
+.habit-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; }
+
+.habit { border-left: 6px solid var(--primary); padding: 1rem 1.25rem; }
+
+.habit-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.habit-info h3 { margin: 0; font-size: 1.05rem; }
+.habit-info p { margin: 0.25rem 0 0; font-size: 0.9rem; }
+.habit .habit-form { margin-top: 0; }
